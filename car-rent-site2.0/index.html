@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarRent - Вход</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="listings.html" class="logo">CarRent</a>
+
+        <nav class="main-nav">
+            <a href="listings.html" class="nav-link">Объявления</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="add-car.html" class="header-add-btn">Подать объявление</a>
+
+            <div class="guest-actions">
+                <a href="index.html" class="guest-link">Войти</a>
+                <a href="register.html" class="guest-link guest-link-primary">Регистрация</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <section class="hero-auth">
+        <div class="hero-auth__content">
+            <div class="hero-auth__badge">Аренда авто с договором в одном сервисе</div>
+
+            <h1>Найдите автомобиль, обсудите условия и оформите договор аренды онлайн</h1>
+
+            <p>
+                CarRent помогает пройти весь путь в одном месте:
+                от поиска подходящей машины и общения с владельцем
+                до подготовки шаблона договора аренды.
+            </p>
+
+            <div class="hero-auth__features">
+                <div class="hero-auth__feature">
+                    <strong>1</strong>
+                    <span>Поиск автомобиля</span>
+                </div>
+                <div class="hero-auth__feature">
+                    <strong>2</strong>
+                    <span>Чат с владельцем</span>
+                </div>
+                <div class="hero-auth__feature">
+                    <strong>3</strong>
+                    <span>Подготовка договора</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-auth__form form-box">
+            <div class="page-top">
+                <h1>Вход</h1>
+            </div>
+
+            <p class="page-desc" style="margin-bottom: 20px;">
+                Войдите в аккаунт, чтобы перейти к объявлениям, чатам и договору.
+            </p>
+
+            <form>
+                <label for="loginEmail">Email</label>
+                <input id="loginEmail" name="email" type="email" placeholder="Введите email">
+
+                <label for="loginPassword">Пароль</label>
+                <input id="loginPassword" name="password" type="password" placeholder="Введите пароль">
+
+                <button type="submit" class="btn" style="width: 100%;">Войти</button>
+            </form>
+
+            <p class="form-note" style="margin-top: 16px;">
+                Нет аккаунта?
+                <a href="register.html" style="color: #fff; font-weight: 700;">Зарегистрироваться</a>
+            </p>
+        </div>
+    </section>
+</div>
+
+<div class="footer">© 2026 CarRent. Все права защищены.</div>
+
+</body>
+</html>

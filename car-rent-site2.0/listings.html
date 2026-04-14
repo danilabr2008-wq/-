@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarRent - Объявления</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="listings.html" class="logo">CarRent</a>
+
+        <nav class="main-nav">
+            <a href="listings.html" class="nav-link active">Объявления</a>
+            <a href="chat.html" class="nav-link">Чат</a>
+            <a href="contract.html" class="nav-link">Договор</a>
+            <a href="profile.html" class="nav-link">Профиль</a>
+            <a href="settings.html" class="nav-link">Настройки</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="add-car.html" class="header-add-btn">Подать объявление</a>
+
+            <div class="profile-dropdown">
+                <button class="profile-dropdown-toggle" type="button">
+                    <span class="profile-avatar">A</span>
+                    <span class="profile-name">Аккаунт</span>
+                    <span class="profile-arrow">▾</span>
+                </button>
+
+                <div class="profile-dropdown-menu">
+                    <a href="profile.html" class="profile-dropdown-item">
+                        <span class="menu-icon">👤</span>
+                        <span>Профиль</span>
+                    </a>
+                    <a href="settings.html" class="profile-dropdown-item">
+                        <span class="menu-icon">⚙️</span>
+                        <span>Настройки</span>
+                    </a>
+                    <div class="profile-dropdown-divider"></div>
+                    <a href="index.html" class="profile-dropdown-item danger">
+                        <span class="menu-icon">↩</span>
+                        <span>Выйти</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <section class="listings-hero">
+        <div class="listings-hero__content">
+            <div class="listings-hero__badge">Объявления об аренде автомобилей</div>
+            <h1>Подберите автомобиль и переходите к договору без лишних шагов</h1>
+            <p>
+                Найдите подходящую машину, обсудите условия с владельцем в чате
+                и используйте сайт для подготовки договора аренды.
+            </p>
+        </div>
+
+        <div class="listings-hero__actions">
+            <a href="add-car.html" class="btn">Добавить объявление</a>
+            <a href="chat.html" class="btn btn-outline dark-outline-btn">Открыть чат</a>
+        </div>
+    </section>
+
+    <section class="filter-bar filter-bar-extended">
+        <input type="text" id="searchInput" name="search" placeholder="Поиск по марке, модели или владельцу">
+
+        <select id="brandFilter" name="brand">
+            <option value="">Марка</option>
+            <option>BMW</option>
+            <option>Audi</option>
+            <option>Mercedes</option>
+            <option>Toyota</option>
+            <option>Kia</option>
+            <option>Hyundai</option>
+            <option>Lexus</option>
+        </select>
+
+        <input type="text" id="modelFilter" name="model" placeholder="Модель">
+
+        <select id="cityFilter" name="city">
+            <option value="">Город</option>
+            <option>Ереван</option>
+            <option>Гюмри</option>
+            <option>Ванадзор</option>
+        </select>
+
+        <input type="number" id="yearFilter" name="year" placeholder="Год выпуска">
+
+        <select id="bodyTypeFilter" name="body_type">
+            <option value="">Кузов</option>
+            <option>Седан</option>
+            <option>Кроссовер</option>
+            <option>Внедорожник</option>
+            <option>Купе</option>
+            <option>Хэтчбек</option>
+        </select>
+
+        <select id="colorFilter" name="color">
+            <option value="">Цвет</option>
+            <option>Черный</option>
+            <option>Белый</option>
+            <option>Серый</option>
+            <option>Синий</option>
+            <option>Красный</option>
+        </select>
+
+        <select id="transmissionFilter" name="transmission">
+            <option value="">Коробка</option>
+            <option>Автомат</option>
+            <option>Механика</option>
+        </select>
+
+        <select id="fuelFilter" name="fuel">
+            <option value="">Топливо</option>
+            <option>Бензин</option>
+            <option>Дизель</option>
+            <option>Гибрид</option>
+            <option>Электро</option>
+        </select>
+
+        <input type="text" id="engineFilter" name="engine" placeholder="Объем двигателя">
+        <input type="number" id="termFilter" name="min_term" placeholder="Мин. срок аренды, дни">
+        <input type="number" id="priceMinFilter" name="price_min" placeholder="Цена от">
+        <input type="number" id="priceMaxFilter" name="price_max" placeholder="Цена до">
+
+        <div class="filter-actions">
+            <button type="button">Применить</button>
+            <button type="button" class="btn btn-outline dark-outline-btn">Сбросить</button>
+        </div>
+    </section>
+
+    <section class="catalog-head">
+        <div>
+            <h2>Результаты поиска</h2>
+            <p>После подключения логики здесь будут отображаться подходящие объявления.</p>
+        </div>
+    </section>
+
+    <section class="page-shell">
+        <div class="empty-state">
+            <h2>Объявлений пока нет</h2>
+            <p>После добавления автомобилей здесь будет отображаться каталог доступных объявлений.</p>
+        </div>
+    </section>
+</div>
+
+<div class="footer">© 2026 CarRent. Все права защищены.</div>
+
+</body>
+</html>

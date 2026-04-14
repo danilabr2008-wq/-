@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarRent - Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="listings.html" class="logo">CarRent</a>
+
+        <nav class="main-nav">
+            <a href="listings.html" class="nav-link">Объявления</a>
+        </nav>
+
+        <div class="header-actions">
+            <div class="guest-actions">
+                <a href="index.html" class="guest-link">Войти</a>
+                <a href="register.html" class="guest-link guest-link-primary">Регистрация</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="back-row">
+        <a href="javascript:history.back()" class="back-button">
+            <span>←</span>
+            <span>Назад</span>
+        </a>
+    </div>
+
+    <section class="hero-auth">
+        <div class="hero-auth__content">
+            <div class="hero-auth__badge">Создание аккаунта</div>
+
+            <h1>Зарегистрируйтесь и получите доступ к объявлениям, чату и договору</h1>
+
+            <p>
+                После регистрации пользователь сможет искать автомобили,
+                общаться с владельцами и использовать сайт для подготовки
+                договора аренды.
+            </p>
+
+            <div class="hero-auth__features">
+                <div class="hero-auth__feature">
+                    <strong>Аккаунт</strong>
+                    <span>Единый доступ ко всем функциям сервиса</span>
+                </div>
+                <div class="hero-auth__feature">
+                    <strong>Чат</strong>
+                    <span>Переписка с владельцем напрямую на сайте</span>
+                </div>
+                <div class="hero-auth__feature">
+                    <strong>Договор</strong>
+                    <span>Подготовка шаблона аренды в одном месте</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-auth__form form-box">
+            <div class="page-top">
+                <h1>Регистрация</h1>
+            </div>
+
+            <p class="page-desc" style="margin-bottom: 20px;">
+                Создайте аккаунт, чтобы пользоваться всеми возможностями CarRent.
+            </p>
+
+            <form>
+                <label for="regName">Имя</label>
+                <input id="regName" name="name" type="text" placeholder="Введите имя">
+
+                <label for="regEmail">Email</label>
+                <input id="regEmail" name="email" type="email" placeholder="Введите email">
+
+                <label for="regPassword">Пароль</label>
+                <input id="regPassword" name="password" type="password" placeholder="Введите пароль">
+
+                <label for="regPasswordRepeat">Повторите пароль</label>
+                <input id="regPasswordRepeat" name="password_repeat" type="password" placeholder="Повторите пароль">
+
+                <button type="submit" class="btn" style="width: 100%;">Зарегистрироваться</button>
+            </form>
+
+            <p class="form-note" style="margin-top: 16px;">
+                Уже есть аккаунт?
+                <a href="index.html" style="color:#fff; font-weight:700;">Войти</a>
+            </p>
+        </div>
+    </section>
+</div>
+
+<div class="footer">© 2026 CarRent. Все права защищены.</div>
+
+</body>
+</html>

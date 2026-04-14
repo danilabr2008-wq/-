@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarRent - Настройки</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="listings.html" class="logo">CarRent</a>
+
+        <nav class="main-nav">
+            <a href="listings.html" class="nav-link">Объявления</a>
+            <a href="chat.html" class="nav-link">Чат</a>
+            <a href="contract.html" class="nav-link">Договор</a>
+            <a href="profile.html" class="nav-link">Профиль</a>
+            <a href="settings.html" class="nav-link active">Настройки</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="add-car.html" class="header-add-btn">Подать объявление</a>
+        </div>
+    </div>
+</header>
+
+<div class="container settings-page">
+    <div class="back-row">
+        <a href="javascript:history.back()" class="back-button">
+            <span>←</span>
+            <span>Назад</span>
+        </a>
+    </div>
+
+    <section class="settings-box">
+        <div class="page-top">
+            <h1>Настройки</h1>
+        </div>
+
+        <p class="page-desc" style="margin-bottom: 24px;">
+            Здесь пользователь сможет управлять уведомлениями и базовыми параметрами аккаунта.
+        </p>
+
+        <section class="settings-section">
+            <div class="settings-list">
+                <div class="settings-item">
+                    <div>
+                        <h3>Новые сообщения</h3>
+                        <p>Уведомления о новых сообщениях в чате.</p>
+                    </div>
+                    <label class="ios-switch">
+                        <input type="checkbox" checked>
+                        <span class="ios-slider"></span>
+                    </label>
+                </div>
+
+                <div class="settings-item">
+                    <div>
+                        <h3>Новые заявки</h3>
+                        <p>Уведомления об интересе к вашим объявлениям.</p>
+                    </div>
+                    <label class="ios-switch">
+                        <input type="checkbox">
+                        <span class="ios-slider"></span>
+                    </label>
+                </div>
+
+                <div class="settings-item">
+                    <div>
+                        <h3>Обновления по договору</h3>
+                        <p>Уведомления о шагах, связанных с подготовкой договора.</p>
+                    </div>
+                    <label class="ios-switch">
+                        <input type="checkbox" checked>
+                        <span class="ios-slider"></span>
+                    </label>
+                </div>
+
+                <div class="settings-item">
+                    <div>
+                        <h3>Напоминания</h3>
+                        <p>Напоминания о сроках аренды и предстоящих действиях.</p>
+                    </div>
+                    <label class="ios-switch">
+                        <input type="checkbox">
+                        <span class="ios-slider"></span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <button class="settings-save-btn">Сохранить настройки</button>
+    </section>
+</div>
+
+<div class="footer">© 2026 CarRent. Все права защищены.</div>
+
+</body>
+</html>

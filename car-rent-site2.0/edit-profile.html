@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarRent - Редактировать профиль</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="listings.html" class="logo">CarRent</a>
+
+        <nav class="main-nav">
+            <a href="listings.html" class="nav-link">Объявления</a>
+            <a href="chat.html" class="nav-link">Чат</a>
+            <a href="contract.html" class="nav-link">Договор</a>
+            <a href="profile.html" class="nav-link active">Профиль</a>
+            <a href="settings.html" class="nav-link">Настройки</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="add-car.html" class="header-add-btn">Подать объявление</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="back-row">
+        <a href="javascript:history.back()" class="back-button">
+            <span>←</span>
+            <span>Назад</span>
+        </a>
+    </div>
+
+    <section class="edit-box" style="max-width: 780px; margin: 0 auto;">
+        <div class="page-top">
+            <h1>Редактировать профиль</h1>
+        </div>
+
+        <p class="page-desc" style="margin-bottom: 24px;">
+            На этой странице пользователь сможет обновлять личные данные и настраивать свой аккаунт.
+        </p>
+
+        <form>
+            <label for="editName">Имя</label>
+            <input id="editName" name="name" type="text" placeholder="Введите имя">
+
+            <label for="editEmail">Email</label>
+            <input id="editEmail" name="email" type="email" placeholder="Введите email">
+
+            <label for="editPhone">Телефон</label>
+            <input id="editPhone" name="phone" type="text" placeholder="Введите телефон">
+
+            <label for="editPassword">Новый пароль</label>
+            <input id="editPassword" name="password" type="password" placeholder="Введите новый пароль">
+
+            <label for="editPhoto">Фото профиля</label>
+            <input id="editPhoto" name="photo" type="file">
+
+            <button type="submit">Сохранить изменения</button>
+        </form>
+    </section>
+</div>
+
+<div class="footer">© 2026 CarRent. Все права защищены.</div>
+
+</body>
+</html>

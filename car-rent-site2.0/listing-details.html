@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarRent - Карточка объявления</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="listings.html" class="logo">CarRent</a>
+
+        <nav class="main-nav">
+            <a href="listings.html" class="nav-link active">Объявления</a>
+            <a href="chat.html" class="nav-link">Чат</a>
+            <a href="contract.html" class="nav-link">Договор</a>
+            <a href="profile.html" class="nav-link">Профиль</a>
+            <a href="settings.html" class="nav-link">Настройки</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="add-car.html" class="header-add-btn">Подать объявление</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="back-row">
+        <a href="javascript:history.back()" class="back-button">
+            <span>←</span>
+            <span>Назад</span>
+        </a>
+    </div>
+
+    <div class="listing-breadcrumbs">
+        <a href="listings.html">Главная</a>
+        <span>›</span>
+        <a href="listings.html">Объявления</a>
+        <span>›</span>
+        <span>Карточка автомобиля</span>
+    </div>
+
+    <div class="listing-details-layout">
+        <div class="listing-main-column">
+            <section class="listing-gallery-card">
+                <h1>Карточка автомобиля</h1>
+
+                <div class="listing-main-image-wrap">
+                    <div class="empty-state listing-main-image-empty">
+                        <h2>Фото появятся здесь</h2>
+                        <p>После подключения данных изображения автомобиля будут отображаться в этой области.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="listing-info-card">
+                <h2>Характеристики</h2>
+
+                <div class="listing-specs-grid">
+                    <div class="listing-spec-item"><span>Марка</span><strong>—</strong></div>
+                    <div class="listing-spec-item"><span>Модель</span><strong>—</strong></div>
+                    <div class="listing-spec-item"><span>Год выпуска</span><strong>—</strong></div>
+                    <div class="listing-spec-item"><span>Город</span><strong>—</strong></div>
+                    <div class="listing-spec-item"><span>Кузов</span><strong>—</strong></div>
+                    <div class="listing-spec-item"><span>Цвет</span><strong>—</strong></div>
+                    <div class="listing-spec-item"><span>Коробка</span><strong>—</strong></div>
+                    <div class="listing-spec-item"><span>Топливо</span><strong>—</strong></div>
+                    <div class="listing-spec-item"><span>Двигатель</span><strong>—</strong></div>
+                    <div class="listing-spec-item"><span>Мин. срок аренды</span><strong>—</strong></div>
+                    <div class="listing-spec-item"><span>Состояние</span><strong>—</strong></div>
+                    <div class="listing-spec-item"><span>Владелец</span><strong>—</strong></div>
+                </div>
+            </section>
+
+            <section class="listing-info-card">
+                <h2>Описание</h2>
+                <p>
+                    Здесь будет выводиться подробное описание автомобиля,
+                    условий аренды, особенностей передачи и дополнительной информации.
+                </p>
+            </section>
+
+            <section class="listing-info-card">
+                <h2>Расположение</h2>
+
+                <div class="listing-location-box">
+                    <div class="listing-location-top">
+                        Адрес и район будут отображаться после заполнения объявления.
+                    </div>
+
+                    <div class="listing-map-placeholder">
+                        <span>Карта</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <aside class="listing-side-column">
+            <section class="listing-price-card">
+                <div class="listing-price">Цена не указана</div>
+                <div class="listing-rating-line">Рейтинг станет доступен после запуска логики</div>
+                <div class="listing-status-line">Статус объявления будет отображаться здесь</div>
+
+                <div class="listing-owner-card">
+                    <div class="listing-owner-avatar">A</div>
+                    <div>
+                        <h3>Владелец</h3>
+                        <p>Контактные данные появятся после заполнения объявления</p>
+                    </div>
+                </div>
+
+                <div class="listing-side-actions">
+                    <a href="chat.html" class="btn">Написать продавцу</a>
+                    <a href="contract.html" class="btn btn-outline dark-outline-btn">Перейти к договору</a>
+                </div>
+
+                <div class="listing-side-tags">
+                    <span>Марка</span>
+                    <span>Город</span>
+                    <span>Срок аренды</span>
+                </div>
+            </section>
+        </aside>
+    </div>
+</div>
+
+<div class="footer">© 2026 CarRent. Все права защищены.</div>
+
+</body>
+</html>

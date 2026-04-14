@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarRent - Договор аренды</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="listings.html" class="logo">CarRent</a>
+
+        <nav class="main-nav">
+            <a href="listings.html" class="nav-link">Объявления</a>
+            <a href="chat.html" class="nav-link">Чат</a>
+            <a href="contract.html" class="nav-link active">Договор</a>
+            <a href="profile.html" class="nav-link">Профиль</a>
+            <a href="settings.html" class="nav-link">Настройки</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="add-car.html" class="header-add-btn">Подать объявление</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="back-row">
+        <a href="javascript:history.back()" class="back-button">
+            <span>←</span>
+            <span>Назад</span>
+        </a>
+    </div>
+
+    <section class="contract-box">
+        <div class="page-top">
+            <h1>Договор аренды</h1>
+        </div>
+
+        <p class="page-desc" style="margin-bottom: 24px;">
+            Эта страница нужна для подготовки шаблона договора между арендатором и владельцем автомобиля.
+            После подключения логики данные смогут подставляться автоматически из объявления и чата.
+        </p>
+
+        <form>
+            <div class="form-grid">
+                <div>
+                    <label for="tenantName">ФИО арендатора</label>
+                    <input id="tenantName" name="tenant_name" type="text" placeholder="Введите ФИО арендатора">
+                </div>
+
+                <div>
+                    <label for="ownerName">ФИО арендодателя</label>
+                    <input id="ownerName" name="owner_name" type="text" placeholder="Введите ФИО владельца">
+                </div>
+            </div>
+
+            <div class="form-grid">
+                <div>
+                    <label for="carBrand">Марка автомобиля</label>
+                    <input id="carBrand" name="car_brand" type="text" placeholder="Введите марку">
+                </div>
+
+                <div>
+                    <label for="carModel">Модель автомобиля</label>
+                    <input id="carModel" name="car_model" type="text" placeholder="Введите модель">
+                </div>
+            </div>
+
+            <div class="form-grid">
+                <div>
+                    <label for="rentStart">Дата начала аренды</label>
+                    <input id="rentStart" name="rent_start" type="date">
+                </div>
+
+                <div>
+                    <label for="rentEnd">Дата окончания аренды</label>
+                    <input id="rentEnd" name="rent_end" type="date">
+                </div>
+            </div>
+
+            <div class="form-grid">
+                <div>
+                    <label for="rentTerm">Срок аренды</label>
+                    <input id="rentTerm" name="rent_term" type="text" placeholder="Например 3 дня">
+                </div>
+
+                <div>
+                    <label for="rentPrice">Стоимость аренды</label>
+                    <input id="rentPrice" name="rent_price" type="text" placeholder="Например 360$">
+                </div>
+            </div>
+
+            <label for="extraConditions">Дополнительные условия</label>
+            <textarea id="extraConditions" name="extra_conditions" placeholder="Укажите дополнительные условия аренды"></textarea>
+
+            <button type="submit">Сформировать договор</button>
+        </form>
+
+        <div class="contract-preview">
+            <h3>Предпросмотр договора</h3>
+            <p>
+                После подключения логики здесь будет отображаться оформленный шаблон договора аренды
+                на основе введенных данных.
+            </p>
+        </div>
+    </section>
+</div>
+
+<div class="footer">© 2026 CarRent. Все права защищены.</div>
+
+</body>
+</html>

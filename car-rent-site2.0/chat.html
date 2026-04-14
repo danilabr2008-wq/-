@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarRent - Чат</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="listings.html" class="logo">CarRent</a>
+
+        <nav class="main-nav">
+            <a href="listings.html" class="nav-link">Объявления</a>
+            <a href="chat.html" class="nav-link active">Чат</a>
+            <a href="contract.html" class="nav-link">Договор</a>
+            <a href="profile.html" class="nav-link">Профиль</a>
+            <a href="settings.html" class="nav-link">Настройки</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="add-car.html" class="header-add-btn">Подать объявление</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="back-row">
+        <a href="javascript:history.back()" class="back-button">
+            <span>←</span>
+            <span>Назад</span>
+        </a>
+    </div>
+
+    <div class="desktop-chat-layout">
+        <aside class="desktop-chat-sidebar">
+            <section class="desktop-chat-panel">
+                <div class="page-top">
+                    <h1>Сообщения</h1>
+                </div>
+
+                <p class="page-desc" style="margin-bottom: 18px;">
+                    Здесь будут отображаться все диалоги с владельцами автомобилей.
+                </p>
+
+                <div class="desktop-chat-search">
+                    <input type="text" placeholder="Поиск по сообщениям">
+                </div>
+
+                <div class="desktop-chat-filters">
+                    <button type="button" class="chat-filter-btn active">Все чаты</button>
+                    <button type="button" class="chat-filter-btn">Непрочитанные</button>
+                    <button type="button" class="chat-filter-btn">Архив</button>
+                </div>
+
+                <div class="empty-state small-empty">
+                    <h2>Чатов пока нет</h2>
+                    <p>После перехода из объявления и начала общения диалоги появятся здесь.</p>
+                </div>
+            </section>
+        </aside>
+
+        <main class="desktop-chat-main">
+            <section class="desktop-chat-panel">
+                <div class="desktop-chat-placeholder">
+                    <h2>Откройте диалог</h2>
+                    <p>
+                        После выбора конкретного объявления и перехода к общению
+                        в этой области будет открываться чат с владельцем автомобиля.
+                    </p>
+
+                    <div class="desktop-chat-actions">
+                        <a href="listings.html" class="btn">Перейти к объявлениям</a>
+                        <a href="contract.html" class="btn btn-outline dark-outline-btn">К договору</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+
+<div class="footer">© 2026 CarRent. Все права защищены.</div>
+
+</body>
+</html>

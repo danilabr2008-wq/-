@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarRent - Профиль</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="listings.html" class="logo">CarRent</a>
+
+        <nav class="main-nav">
+            <a href="listings.html" class="nav-link">Объявления</a>
+            <a href="chat.html" class="nav-link">Чат</a>
+            <a href="contract.html" class="nav-link">Договор</a>
+            <a href="profile.html" class="nav-link active">Профиль</a>
+            <a href="settings.html" class="nav-link">Настройки</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="add-car.html" class="header-add-btn">Подать объявление</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="back-row">
+        <a href="javascript:history.back()" class="back-button">
+            <span>←</span>
+            <span>Назад</span>
+        </a>
+    </div>
+
+    <div class="profile-layout">
+        <aside class="profile-card">
+            <div class="page-top">
+                <h1>Профиль</h1>
+            </div>
+
+            <div class="profile-info-list">
+                <div class="profile-info-item">
+                    <span>Имя</span>
+                    <strong>—</strong>
+                </div>
+
+                <div class="profile-info-item">
+                    <span>Email</span>
+                    <strong>—</strong>
+                </div>
+
+                <div class="profile-info-item">
+                    <span>Телефон</span>
+                    <strong>—</strong>
+                </div>
+            </div>
+
+            <div class="profile-actions">
+                <a href="edit-profile.html" class="btn">Редактировать профиль</a>
+                <a href="add-car.html" class="btn btn-outline dark-outline-btn">Добавить объявление</a>
+            </div>
+        </aside>
+
+        <section class="profile-section">
+            <div class="page-top">
+                <h2>Мои объявления</h2>
+            </div>
+
+            <p class="page-desc" style="margin-bottom: 18px;">
+                Здесь будут отображаться все объявления, которые пользователь добавит в систему.
+            </p>
+
+            <div class="empty-state">
+                <h2>Объявлений пока нет</h2>
+                <p>После добавления автомобиля он появится в этом разделе.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="footer">© 2026 CarRent. Все права защищены.</div>
+
+</body>
+</html>

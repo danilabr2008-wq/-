@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarRent - Добавить объявление</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="listings.html" class="logo">CarRent</a>
+
+        <nav class="main-nav">
+            <a href="listings.html" class="nav-link">Объявления</a>
+            <a href="chat.html" class="nav-link">Чат</a>
+            <a href="contract.html" class="nav-link">Договор</a>
+            <a href="profile.html" class="nav-link">Профиль</a>
+            <a href="settings.html" class="nav-link">Настройки</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="add-car.html" class="header-add-btn">Подать объявление</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="back-row">
+        <a href="javascript:history.back()" class="back-button">
+            <span>←</span>
+            <span>Назад</span>
+        </a>
+    </div>
+
+    <section class="add-car-box">
+        <div class="page-top">
+            <h1>Добавить объявление</h1>
+        </div>
+
+        <p class="page-desc" style="margin-bottom: 24px;">
+            Форма использует тот же набор полей, что и фильтры поиска. Это сделано специально,
+            чтобы потом было удобно подключать бекенд и единую логику данных.
+        </p>
+
+        <form>
+            <label for="carTitle">Название объявления</label>
+            <input id="carTitle" name="title" type="text" placeholder="Например: BMW M5 в отличном состоянии">
+
+            <div class="form-grid">
+                <div>
+                    <label for="carBrand">Марка</label>
+                    <select id="carBrand" name="brand">
+                        <option value="">Выберите марку</option>
+                        <option>BMW</option>
+                        <option>Audi</option>
+                        <option>Mercedes</option>
+                        <option>Toyota</option>
+                        <option>Kia</option>
+                        <option>Hyundai</option>
+                        <option>Lexus</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="carModel">Модель</label>
+                    <input id="carModel" name="model" type="text" placeholder="Введите модель">
+                </div>
+            </div>
+
+            <div class="form-grid">
+                <div>
+                    <label for="carCity">Город</label>
+                    <select id="carCity" name="city">
+                        <option value="">Выберите город</option>
+                        <option>Ереван</option>
+                        <option>Гюмри</option>
+                        <option>Ванадзор</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="carYear">Год выпуска</label>
+                    <input id="carYear" name="year" type="number" placeholder="Например 2022">
+                </div>
+            </div>
+
+            <div class="form-grid">
+                <div>
+                    <label for="carBodyType">Кузов</label>
+                    <select id="carBodyType" name="body_type">
+                        <option value="">Выберите кузов</option>
+                        <option>Седан</option>
+                        <option>Кроссовер</option>
+                        <option>Внедорожник</option>
+                        <option>Купе</option>
+                        <option>Хэтчбек</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="carColor">Цвет</label>
+                    <select id="carColor" name="color">
+                        <option value="">Выберите цвет</option>
+                        <option>Черный</option>
+                        <option>Белый</option>
+                        <option>Серый</option>
+                        <option>Синий</option>
+                        <option>Красный</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-grid">
+                <div>
+                    <label for="carTransmission">Коробка передач</label>
+                    <select id="carTransmission" name="transmission">
+                        <option value="">Выберите коробку</option>
+                        <option>Автомат</option>
+                        <option>Механика</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="carFuel">Топливо</label>
+                    <select id="carFuel" name="fuel">
+                        <option value="">Выберите топливо</option>
+                        <option>Бензин</option>
+                        <option>Дизель</option>
+                        <option>Гибрид</option>
+                        <option>Электро</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-grid">
+                <div>
+                    <label for="carEngine">Объем двигателя</label>
+                    <input id="carEngine" name="engine" type="text" placeholder="Например 2.0">
+                </div>
+
+                <div>
+                    <label for="carMinTerm">Минимальный срок аренды</label>
+                    <input id="carMinTerm" name="min_term" type="number" placeholder="Например 3">
+                </div>
+            </div>
+
+            <div class="form-grid">
+                <div>
+                    <label for="carPriceNum">Цена за день</label>
+                    <input id="carPriceNum" name="price_num" type="number" placeholder="Например 120">
+                </div>
+
+                <div>
+                    <label for="carPriceText">Формат цены</label>
+                    <input id="carPriceText" name="price_text" type="text" placeholder="Например 120$ / день">
+                </div>
+            </div>
+
+            <div class="form-grid">
+                <div>
+                    <label for="carOwner">Имя владельца</label>
+                    <input id="carOwner" name="owner" type="text" placeholder="Введите имя владельца">
+                </div>
+
+                <div>
+                    <label for="carPhone">Телефон</label>
+                    <input id="carPhone" name="phone" type="text" placeholder="Введите телефон">
+                </div>
+            </div>
+
+            <label for="carCondition">Состояние</label>
+            <select id="carCondition" name="condition">
+                <option value="">Выберите состояние</option>
+                <option>Отличное</option>
+                <option>Хорошее</option>
+                <option>Есть недочеты</option>
+            </select>
+
+            <label for="carDescription">Описание</label>
+            <textarea id="carDescription" name="description" placeholder="Опишите автомобиль и условия аренды"></textarea>
+
+            <label for="carPhoto">Фото автомобиля</label>
+            <input id="carPhoto" name="photo" type="file">
+
+            <button type="submit">Сохранить объявление</button>
+        </form>
+    </section>
+</div>
+
+<div class="footer">© 2026 CarRent. Все права защищены.</div>
+
+</body>
+</html>
